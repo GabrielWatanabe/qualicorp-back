@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -27,14 +28,6 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
-});
-
-app.get("/cliente", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
-});
 
 app.post("/cliente")
 
