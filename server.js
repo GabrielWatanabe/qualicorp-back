@@ -20,7 +20,7 @@ db.mongoose
   });
 
 var corsOptions = {
-  origin: process.env.CORS
+  origin: "https://qualicorp-front.herokuapp.com"
 };
 
 app.use(cors(corsOptions));
