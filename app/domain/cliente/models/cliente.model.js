@@ -6,7 +6,7 @@ module.exports = (mongoose, mongoosePaginate) => {
           email: String,
           telefone: String,
           endereco: String,
-          dataNascimento: Date,
+          dataNascimento: String,
         },
         { timestamps: true }
     );
